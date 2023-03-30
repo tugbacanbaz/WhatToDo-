@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #649cc2;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 94px;
+    margin-bottom: 1rem;
+}
+
+#new-task-form{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background:none;
+}
+
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: #26648e;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    color: white;
+    
+}
+
+#new-task-input::placeholder{
+    color: white;
+}
+
+#new-task-submit{
+    color: red;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+
+#new-task-submit:active{
+    opacity: 0.6;
+}
+
+main{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: 'Bonheur Royale', cursive;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#tasks {
+    display: flex;  
+    justify-content: space-between;
+    color: white; 
+    
+}
+
+#tasks .text{
+    background-color: #26648e;
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#tasks .delete, .edit{
+    background-color: #26648e;
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatToDo?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Fasthand&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+
+        <h1>What To Do?</h1>
+
+        <form id="new-task-form">
+            
+            <input 
+            type="text" 
+            id="new-task-input"
+            placeholder="What do you have planned?" />
+            <input 
+            type="submit"
+            id="new-task-submit"
+            value="Add task" />
+
+        </form>
+    </header>
+
+    <main>
+
+        <section class="task-list">
+
+            <h2>Tasks</h2>
+            <div id="tasks">
+
+                <div id="task">
+                    <input 
+                    type="text"
+                    class="text"
+                    value="My shiny task"
+                    readonly />
+                </div>
+                
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete"><i class="fa fa-trash"></i>Delete</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
